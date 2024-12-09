@@ -92,6 +92,7 @@ ON COLUMN
 COMMENT
 ON COLUMN
     "products"."supplier_id" IS 'ID поставщика';
+
 CREATE TABLE "categories"(
     "id" BIGINT NOT NULL,
     "name" VARCHAR(255) NOT NULL
@@ -104,6 +105,7 @@ ON COLUMN
 COMMENT
 ON COLUMN
     "categories"."name" IS 'Наименование категории';
+
 CREATE TABLE "manufacturers"(
     "id" BIGINT NOT NULL,
     "name" VARCHAR(255) NOT NULL,
@@ -128,6 +130,7 @@ ON COLUMN
 COMMENT
 ON COLUMN
     "manufacturers"."email" IS 'E-mail';
+
 CREATE TABLE "suppliers"(
     "id" BIGINT NOT NULL,
     "name" VARCHAR(255) NOT NULL,
@@ -204,9 +207,7 @@ ON COLUMN
 CREATE TABLE "prices"(
     "id" BIGINT NOT NULL,
     "product_id" BIGINT NOT NULL,
-    "price" BIGINT NOT NULL,
-    "start_date" DATE NOT NULL,
-    "end_date" DATE NOT NULL
+    "price" BIGINT NOT NULL
 );
 ALTER TABLE
     "prices" ADD PRIMARY KEY("id");
@@ -219,12 +220,6 @@ ON COLUMN
 COMMENT
 ON COLUMN
     "prices"."price" IS 'Цена';
-COMMENT
-ON COLUMN
-    "prices"."start_date" IS 'Дата начала действия цены';
-COMMENT
-ON COLUMN
-    "prices"."end_date" IS 'Дата окончания действия цены';
 ALTER TABLE
     "purchases" ADD CONSTRAINT "purchases_price_id_foreign" FOREIGN KEY("price_id") REFERENCES "prices"("id");
 ALTER TABLE
