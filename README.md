@@ -25,7 +25,7 @@
 	* `id` - ID продукта
 	* `name` - Наименование продукта
 	* `description` - Описание продукта
-  * `category_id` - ID категории
+        * `category_id` - ID категории
 	* `price_id` - ID цены
 * Категории продуктов (`categories`)
 	* `id` - ID категории
