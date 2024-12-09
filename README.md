@@ -23,10 +23,11 @@
 
 * Продукты (`products`)
 	* `id` - ID продукта
+	* `category_id` - ID категории продукта
 	* `name` - Наименование продукта
 	* `description` - Описание продукта
-        * `category_id` - ID категории
-	* `price_id` - ID цены
+	* `manufacturer_id` - ID производителя
+	* `supplier_id` - ID поставщика
 * Категории продуктов (`categories`)
 	* `id` - ID категории
 	* `name` - Наименование категории
