@@ -17,7 +17,7 @@
 - примеры бизнес-задач которые решает база
 
 ## **Схема**
-![scheme]()
+![scheme](https://github.com/KoninklijkeSev/OTUS_DB_2024_HW01/blob/main/Scheme.jpg)
 
 ## **Описание таблиц и полей**
 
